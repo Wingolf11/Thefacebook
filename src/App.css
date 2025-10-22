@@ -1,0 +1,30 @@
+
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    padding: 0px 0px 24px 0px;
+    border-width: 1px;
+    border: solid #3B5998;
+}
+main {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    padding: 4px;
+}
+
+aside {
+    display: flex;
+    flex-direction: column;
+    border-width: 1px;
+    border-color: #3B5998;
+    padding: 2px 4px 24px 4px;
+    gap: 2px;
+}
+
+#card-display {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;   
+}

@@ -1,0 +1,6 @@
+remember children prop, and props in general
+conditions for styling:
+    {!!var ? then this : else, this}
+can nest components to render.
+
+organizar butones segun clases, set border dashed for form

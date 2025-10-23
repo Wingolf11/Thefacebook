@@ -15,3 +15,18 @@ Todo:
 - the people card: children
 
 - Last : fix card
+
+
+COURS:
+Use hooks to save state of user:
+
+Se crea un contexto donde en el que ciertas variables
+cambian y son accesibles en los componentes children dentro the las tags de autentificacion.
+
+q: how to maintain user state using hooks, context, 
+
+import db from "../db.js"
+
+export function getUserByEmail(email) {
+	return db.users.find((user) => user.email === email);
+}

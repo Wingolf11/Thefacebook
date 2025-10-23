@@ -15,22 +15,20 @@ export default function About() {
 					</p>
 				</Card>
 				<Card title="The People">
-                    <div className="the-people-list">
-                        <table>
-                            <tr>
-                                <th><a href="">Mark Zukerberg</a></th>
-                                <td>Founder, Master and Commander, Enemy of the State.</td>
-                            </tr>
-                            <tr>
-                                <th><a href="">Eduardo Saverin</a></th>
-                                <td>Business Stuff, Corporate Stuff, Brazilian Affairs.</td>
-                            </tr>
-                            <tr>
-                                <th><a href="">Andrew McCollum</a></th>
-                                <td>Graphic Art, General Rockstar.</td>
-                            </tr>
-                        </table>
-                    </div>
+                    <table className="the-people-list">
+                        <tr>
+                            <th><a href="">Mark Zukerberg</a></th>
+                            <td>Founder, Master and Commander, Enemy of the State.</td>
+                        </tr>
+                        <tr>
+                            <th><a href="">Eduardo Saverin</a></th>
+                            <td>Business Stuff, Corporate Stuff, Brazilian Affairs.</td>
+                        </tr>
+                        <tr>
+                            <th><a href="">Andrew McCollum</a></th>
+                            <td>Graphic Art, General Rockstar.</td>
+                        </tr>
+                    </table>
                 </Card>
 				<Button></Button>
 			</Card>

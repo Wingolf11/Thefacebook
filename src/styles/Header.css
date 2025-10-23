@@ -2,6 +2,8 @@
 header {
     display: flex;
     flex-direction: row;
+    height: 74.9px;
+    width: 100%;
 }
 
 #div1 {
@@ -9,6 +11,7 @@ header {
     flex-direction: column;
     background-color: #3B5998;
     justify-content: space-between;
+    width: 100%;
 }
 
 #div1-1 {
@@ -16,5 +19,6 @@ header {
     flex-direction: row;
     gap: 12px;
     color: white;
+    width: 100%;
 }
 

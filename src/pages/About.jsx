@@ -7,7 +7,7 @@ export default function About() {
 	return (
 		<>
 			<Card title="About Thefacebook">
-				<p id="about">[About]</p>
+				<h1 id="about">[About]</h1>
 				<Card title="The Project">
 					<p className="plain-text">
 						Thefacebook is an online directory that connects people through

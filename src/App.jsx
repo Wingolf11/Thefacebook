@@ -8,10 +8,12 @@ import Register from "./pages/Register";
 import ContactUs from "./pages/ContactUs";
 
 import "./App.css";
+import { Authentication } from "./hooks/useAuth";
 
 export default function App() {
 	return (
 		<>
+                <Authentication>
 			<BrowserRouter>
 				<Root>
 					<Routes>
@@ -23,6 +25,7 @@ export default function App() {
 					</Routes>
 				</Root>
 			</BrowserRouter>
+                </Authentication>
 		</>
 	);
 }

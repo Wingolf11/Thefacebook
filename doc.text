@@ -1,6 +1,11 @@
-remember children prop, and props in general
-conditions for styling:
-    {!!var ? then this : else, this}
-can nest components to render.
+<BrowserRouter>
+				<Root>
+					<Routes>
+						<Route path="/about" element={<About />} />
+						<Route path="/login" element={<Login />} />
+					</Routes>
+				</Root>
+			</BrowserRouter>
 
-organizar butones segun clases, set border dashed for form
+
+Todo: Faire rooter, faire layout

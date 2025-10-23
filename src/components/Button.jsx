@@ -1,7 +1,5 @@
-import "./Styles/Button.css"
+import "../styles/Button.css";
 
 export default function Button() {
-    return (
-        <button>Home</button>
-    )
+	return <button>Home</button>;
 }

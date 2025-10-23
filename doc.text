@@ -23,6 +23,8 @@ Use hooks to save state of user:
 Se crea un contexto donde en el que ciertas variables
 cambian y son accesibles en los componentes children dentro the las tags de autentificacion.
 
+como estilizar tablas, navlinks header text-deco, alinear footer elements...
+
 q: how to maintain user state using hooks, context, make the content match the padding(it exceeds it)
 
 import db from "../db.js"

@@ -1,10 +1,12 @@
 import Button from "../components/Button";
 import Card from "../components/Card";
+import { Navigate } from "react-router-dom";
 import { useAuth } from "../hooks/useAuth";
 import "../styles/Login.css";
 
 export default function Login() {
 	const { user, signInUser } = useAuth();
+	
 	function signUser(e) {
 		e.preventDefault();
 
@@ -15,6 +17,9 @@ export default function Login() {
 		const signedUser = signInUser(email, password);
 
 		console.log(signedUser);
+/* 		if(signInUser) {
+			Navigate('./Profile.jsx');
+		} */
 	}
 
 	return (
@@ -22,14 +27,18 @@ export default function Login() {
 			<h1>[Login]</h1>
 			<form onSubmit={signUser}>
 				<div className="input-form">
-					<label htmlFor="">Email</label>
-					<input type="text" name="email" />
-					<label htmlFor="">Password</label>
-					<input type="password" name="password" />
+					<div className="email-input">
+						<label htmlFor="">Email</label>
+						<input type="text" name="email" />
+					</div>
+					<div className="password-input">
+						<label htmlFor="">Password</label>
+						<input type="password" name="password" />
+					</div>
 				</div>
 				<div className="button-div">
-					<Button></Button>
-					<Button></Button>
+					<Button title="Login"></Button>
+					<Button title="Register"></Button>
 				</div>
 				<p>
 					If you have forgotten your password, click <a href="">here</a> to

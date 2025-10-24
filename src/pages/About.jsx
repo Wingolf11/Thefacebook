@@ -35,7 +35,7 @@ export default function About() {
                         </thead>
                     </table>
                 </Card>
-				<Button></Button>
+				<Button title="Home"></Button>
 			</Card>
 		</>
 	);

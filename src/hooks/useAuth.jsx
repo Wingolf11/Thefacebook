@@ -15,8 +15,8 @@ export function Authentication({ children }) {
 	function signInUser(email, password) {
 		const user = getUserEmail(email);
 
-		/* 		if (!user || user.password !== password)
-			throw new Error("Wrong credentials"); */
+		if (!user || user.password !== password)
+			throw new Error("Wrong credentials");
 
 		setUser(user);
 

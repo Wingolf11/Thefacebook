@@ -2,7 +2,13 @@
 div.input-form {
     display: flex;
     flex-direction: column;
-    
+}
+
+div.input-form div.email-input,
+div.input-form div.password-input {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 form {

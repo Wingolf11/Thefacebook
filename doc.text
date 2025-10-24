@@ -16,6 +16,8 @@ Todo:
 
 - Last : fix card
 
+- fix aside in Root.
+
 
 COURS:
 Use hooks to save state of user:
@@ -32,3 +34,12 @@ import db from "../db.js"
 export function getUserByEmail(email) {
 	return db.users.find((user) => user.email === email);
 }
+
+
+
+
+
+ABOUT: useEffect, useParams
+
+useEffect for upload page or values in general, when useStates changes them
+useParams recovers a value from path as we have to get the id from the user to know wich profile to display.

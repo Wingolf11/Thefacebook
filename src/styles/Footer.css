@@ -3,9 +3,26 @@ footer {
     display: flex;
     flex-direction: column;
     padding: 0px 0px 0px 24px;
+    width: fit-content;
+    align-items: center;
+    gap: 4px;
 }
 
-nav {
+div.footer-link-list {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+
+}
+
+div.author {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+}
+
+div.author p{
+    margin: auto;
 }
 
 a {

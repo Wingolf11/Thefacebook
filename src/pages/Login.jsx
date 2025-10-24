@@ -1,5 +1,7 @@
+import Button from "../components/Button";
 import Card from "../components/Card";
 import { useAuth } from "../hooks/useAuth";
+import "../styles/Login.css";
 
 export default function Login() {
 	const { user, signInUser } = useAuth();
@@ -16,10 +18,24 @@ export default function Login() {
 	}
 
 	return (
-		<form onSubmit={signUser}>
-			<input type="text" name="email" />
-			<input type="password" name="password" />
-			<button type="submit">Login</button>
-		</form>
+		<Card title="Login">
+			<h1>[Login]</h1>
+			<form onSubmit={signUser}>
+				<div className="input-form">
+					<label htmlFor="">Email</label>
+					<input type="text" name="email" />
+					<label htmlFor="">Password</label>
+					<input type="password" name="password" />
+				</div>
+				<div className="button-div">
+					<Button></Button>
+					<Button></Button>
+				</div>
+				<p>
+					If you have forgotten your password, click <a href="">here</a> to
+					reset it.
+				</p>
+			</form>
+		</Card>
 	);
 }
